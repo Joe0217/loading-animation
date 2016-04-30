@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no, minimal-ui"/>
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8;">
+    <title>CSS3实现加载的动画效果</title>
+    <meta name="author" content="rainna" />
+    <meta name="keywords" content="rainna's css lib" />
+    <meta name="description" content="CSS3" />
+    <link rel="stylesheet" type="text/css" href="loading-animation.css">
+</head>
+<body>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="loading-animation.js"></script>
+<script>
+    window.onload = function(){
+//        加载动画的方法
+//        loading.lazyLoading1();
+        loading.lazyLoading2();
+        setTimeout(function(){
+//            关闭动画的方法
+            loading.closeLazyLoading();
+        },2000);
+    }
+</script>
+</body>
+</html>
